@@ -4,7 +4,7 @@
 ## 1.Background
 In the fitness world, gyms are where most exercising happens. Bodybuilders, athletes, crossfitters and even beginners have to sign in/ sign up at the reception before accessing the gym. It is then the responsibilty of the gym to keep records of everything that happens from signing in and out to maintaning equipment and keeping track of membership records.
 
-##2.Problem
+## 2.Problem
 Keeping history records is a crucial process of any business or company, traditionally storing information in papers is inefficient because the process is prone to human error, data duplication and inconsistent records.
 
 ## 3.Solution

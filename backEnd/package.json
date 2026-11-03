@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend server for the gym api",
+  "homepage": "https://github.com/LeboKR/MyGym#readme",
+  "bugs": {
+    "url": "https://github.com/LeboKR/MyGym/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeboKR/MyGym.git"
+  },
+  "license": "MIT",
+  "author": "Lebza",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}

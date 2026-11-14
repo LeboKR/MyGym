@@ -13,7 +13,7 @@ To solve this problem I have implemented a management system that automates the 
 ## 4.Implementation
 The solution is a software system that is a full stack web application aimed at automating the tasks of a manager without need of recording on paperwork.
 
-##  5.
+## 5.
 
 ## 6.Normalisation process
 

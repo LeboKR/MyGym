@@ -19,6 +19,10 @@ signUpBtnEl.addEventListener('click', event =>{
     if(firstName.trim() && lastName.trim() && userEmail.trim() && userPassword.trim())
     {
         console.log('New Account successfully created.')
+        localStorage.setItem('firstName', firstName)
+        localStorage.setItem('lastName', lastName)
+        localStorage.setItem('userEmail', userEmail)
+        localStorage.setItem('userPassword', userPassword)
         
     } else {
         console.log('Please enter all fields.')

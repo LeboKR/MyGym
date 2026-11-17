@@ -21,6 +21,7 @@ signUpBtnEl.addEventListener('click', event =>{
         localStorage.setItem('userEmail', userEmail)
         localStorage.setItem('userPassword', userPassword)
         
+        
     } else {
         console.log('Please enter all fields.')
     }

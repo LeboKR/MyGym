@@ -15,3 +15,6 @@
 
 - Send the details of a new user : /api/newuser
 
+#### USER GUIDE
+- Make sure you have atleast version 26.7.0 of Node and at least version 11.19.0 of npm installed in your machine, although older versions may also work I recommend the newer ones to avoid manual troubleshooting
+- Run the command 'npm run start' in the MyGym/backEnd directory to start the server.

@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+    --animate-cta-pulse: cta-pulse 1.8s ease-in-out infinite;
+
+    @keyframes cta-pulse {
+        0%, 100% {
+            box-shadow: 0 0 0 0 rgb(147 51 234 / 0.4);
+            transform: scale(1);
+        }
+        50% {
+            box-shadow: 0 0 0 9px rgb(147 51 234 / 0);
+            transform: scale(1.035);
+        }
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the My Gym management project: a Tailwind front end, a small Node.js API prototype, and a focus on member and membership records.">
+    <meta name="theme-color" content="#020617">
+    <link rel="stylesheet" href="output.css">
+    <title>Project Overview | My Gym Management System</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Project Overview | My Gym Management System">
+    <meta property="og:description" content="See the purpose, current scope, and prototype limits of the My Gym management project.">
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100">
+    <header class="border-b border-slate-800">
+        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-5 px-5 py-5 sm:px-8">
+            <a class="flex items-center gap-3" href="index.html" aria-label="My Gym home">
+                <span class="grid size-10 place-items-center rounded-lg border border-cyan-400/40 bg-cyan-400/10 text-sm font-bold text-cyan-300" aria-hidden="true">MG</span>
+                <span>
+                    <span class="block text-lg font-bold leading-none tracking-wide text-white">MY GYM</span>
+                    <span class="mt-1 block text-xs font-medium uppercase tracking-[0.18em] text-slate-400">Gym management project</span>
+                </span>
+            </a>
+            <nav class="hidden items-center gap-7 text-sm font-medium text-slate-300 md:flex" aria-label="Main navigation">
+                <a class="transition-colors hover:text-white" href="index.html">Home</a>
+                <a class="text-white" href="features.html" aria-current="page">Project overview</a>
+                <a class="transition-colors hover:text-white" href="membership.html">Membership data</a>
+                <a class="animate-cta-pulse rounded-lg bg-purple-600 px-5 py-3 font-semibold text-white transition duration-200 hover:scale-105 hover:bg-purple-500 motion-reduce:animate-none" href="signUp.html">Open demo</a>
+            </nav>
+            <details class="relative md:hidden">
+                <summary class="flex cursor-pointer list-none items-center gap-3 rounded-lg border border-slate-700 px-4 py-3 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-cyan-400">
+                    Menu
+                    <span class="grid gap-1" aria-hidden="true">
+                        <span class="h-0.5 w-5 bg-current"></span>
+                        <span class="h-0.5 w-5 bg-current"></span>
+                        <span class="h-0.5 w-5 bg-current"></span>
+                    </span>
+                </summary>
+                <div class="absolute right-0 top-full z-50 mt-3 grid min-w-56 gap-1 rounded-xl border border-slate-700 bg-slate-900 p-2 shadow-xl">
+                    <a class="rounded-lg px-4 py-3 text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-white" href="index.html">Home</a>
+                    <a class="rounded-lg px-4 py-3 text-sm font-medium text-white hover:bg-slate-800" href="features.html" aria-current="page">Project overview</a>
+                    <a class="rounded-lg px-4 py-3 text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-white" href="membership.html">Membership data</a>
+                    <a class="animate-cta-pulse m-2 rounded-lg bg-purple-600 px-4 py-3 text-center text-sm font-semibold text-white motion-reduce:animate-none" href="signUp.html">Open demo</a>
+                </div>
+            </details>
+        </div>
+    </header>
+
+    <main>
+        <section class="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20 lg:py-24">
+            <div class="max-w-3xl">
+                <p class="text-xs font-bold uppercase tracking-[0.2em] text-cyan-400">About the project</p>
+                <h1 class="mt-4 text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl">A gym management system prototype, built in the open.</h1>
+                <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">My Gym explores how member registration and membership records could move from paper into a simple web-based workflow. The current repository is an early prototype, not a finished gym service.</p>
+            </div>
+        </section>
+
+        <section class="border-y border-slate-800 bg-slate-900/50">
+            <div class="mx-auto grid max-w-7xl gap-4 px-5 py-14 sm:px-8 sm:py-20 md:grid-cols-2">
+                <article class="rounded-xl border border-slate-800 bg-slate-950 p-6 sm:p-8">
+                    <p class="text-xs font-bold uppercase tracking-[0.18em] text-cyan-400">Interface</p>
+                    <h2 class="mt-4 text-2xl font-semibold text-white">Member registration demo</h2>
+                    <p class="mt-3 leading-7 text-slate-400">The Tailwind CSS front end includes a registration form to illustrate the details a gym might collect. Submissions are stored in the browser only; there is no live member account flow.</p>
+                </article>
+                <article class="rounded-xl border border-slate-800 bg-slate-950 p-6 sm:p-8">
+                    <p class="text-xs font-bold uppercase tracking-[0.18em] text-cyan-400">API</p>
+                    <h2 class="mt-4 text-2xl font-semibold text-white">Member data endpoints</h2>
+                    <p class="mt-3 leading-7 text-slate-400">Project documentation describes a Node.js HTTP API and user records with names, subscription type, and trainer status. The current server response is a placeholder rather than a connected member database.</p>
+                </article>
+                <article class="rounded-xl border border-slate-800 bg-slate-950 p-6 sm:p-8">
+                    <p class="text-xs font-bold uppercase tracking-[0.18em] text-cyan-400">Project goal</p>
+                    <h2 class="mt-4 text-2xl font-semibold text-white">Membership and equipment records</h2>
+                    <p class="mt-3 leading-7 text-slate-400">The project brief includes membership administration and equipment maintenance. Complete admin and maintenance workflows are not available in this prototype.</p>
+                </article>
+                <article class="rounded-xl border border-slate-800 bg-slate-950 p-6 sm:p-8">
+                    <p class="text-xs font-bold uppercase tracking-[0.18em] text-cyan-400">Try the interface</p>
+                    <h2 class="mt-4 text-2xl font-semibold text-white">Use test details only</h2>
+                    <p class="mt-3 leading-7 text-slate-400">The demo form stores entered values locally in your browser. Do not enter real passwords or sensitive personal information.</p>
+                    <a class="mt-5 inline-flex font-semibold text-cyan-300 underline decoration-cyan-400/40 underline-offset-4 hover:text-white" href="signUp.html">Open the registration demo</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-14 sm:px-8 sm:py-20 md:flex-row md:items-center md:justify-between">
+            <div>
+                <p class="text-xs font-bold uppercase tracking-[0.2em] text-cyan-400">Explore the data model</p>
+                <h2 class="mt-3 text-3xl font-bold tracking-tight text-white">See the membership fields in scope.</h2>
+            </div>
+            <a class="rounded-lg border border-slate-700 px-6 py-3 font-semibold text-slate-200 transition-colors hover:border-cyan-400 hover:text-white" href="membership.html">Membership data</a>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-800">
+        <div class="mx-auto max-w-7xl px-5 py-6 text-sm text-slate-500 sm:px-8">My Gym <span class="px-2 text-slate-700">/</span> Project overview</div>
+    </footer>
+</body>
+</html>

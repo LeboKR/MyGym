@@ -3,107 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore My Gym, an early-stage gym management project focused on member records, membership information, and equipment maintenance.">
-    <meta name="theme-color" content="#020617">
-    <link rel="preload" as="image" href="assets/hero-section.jpg" fetchpriority="high">
     <link rel="stylesheet" href="./output.css">
-    <title>My Gym | Gym Management System Project</title>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="My Gym | Gym Management System Project">
-    <meta property="og:description" content="Explore the My Gym prototype, its member record concepts, and the project scope.">
+    <title>My Gym | Train with purpose</title>
 </head>
-<body class="min-h-screen bg-slate-950 text-slate-100">
-    <header class="border-b border-slate-800">
-        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-5 px-5 py-5 sm:px-8">
-            <a class="flex items-center gap-3" href="index.html" aria-label="My Gym home">
-                <span class="grid size-10 place-items-center rounded-lg border border-cyan-400/40 bg-cyan-400/10 text-sm font-bold text-cyan-300" aria-hidden="true">LOGO</span>
-                <span>
-                    <span class="block text-lg font-bold leading-none tracking-wide text-white">MY GYM</span>
-                    <span class="mt-1 block text-xs font-medium uppercase tracking-[0.18em] text-slate-400">TRAIN WITH PURPOSE</span>
-                </span>
-            </a>
-            <nav class="hidden items-center gap-7 text-sm font-medium text-slate-300 md:flex" aria-label="Main navigation">
-                <a class="transition-colors hover:text-white" href="index.html" aria-current="page">Home</a>
-                <a class="transition-colors hover:text-white" href="training.html">Training</a>
-                <a class="transition-colors hover:text-white" href="membership.html">Membership</a>
-                <a class="animate-cta-pulse rounded-lg bg-purple-600 px-5 py-3 font-semibold text-white transition duration-200 hover:scale-105 hover:bg-purple-500 motion-reduce:animate-none" href="signUp.html">Join now</a>
-            </nav>
-            <details class="relative md:hidden">
-                <summary class="flex cursor-pointer list-none items-center gap-3 rounded-lg border border-slate-700 px-4 py-3 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-cyan-400">
-                    Menu
-                    <span class="grid gap-1" aria-hidden="true">
-                        <span class="h-0.5 w-5 bg-current"></span>
-                        <span class="h-0.5 w-5 bg-current"></span>
-                        <span class="h-0.5 w-5 bg-current"></span>
-                    </span>
-                </summary>
-                <div class="absolute right-0 top-full z-50 mt-3 grid min-w-56 gap-1 rounded-xl border border-slate-700 bg-slate-900 p-2 shadow-xl">
-                    <a class="rounded-lg px-4 py-3 text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-white" href="index.html" aria-current="page">Home</a>
-                    <a class="rounded-lg px-4 py-3 text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-white" href="training.html">Training</a>
-                    <a class="rounded-lg px-4 py-3 text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-white" href="membership.html">Membership</a>
-                    <a class="animate-cta-pulse m-2 rounded-lg bg-purple-600 px-4 py-3 text-center text-sm font-semibold text-white motion-reduce:animate-none" href="signUp.html">Join now</a>
-                </div>
-            </details>
-        </div>
-    </header>
+<body class = "bg-slate-950 text-cyan-500">
+<section class="mb-8 flex border-b-2">
+        <a class="text-3xl font-semibold p-8" href="index.html">
+            My Gym
+        </a>
+        <nav class = "ms-auto  text-xl gap-10 flex items-center px-8">
+            <ul class = "flex space-x-8 ">
+                <li><a href="index.html">Home</a></li>
 
-    <main>
-        <section class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-24">
-            <div class="max-w-2xl">
-                <p class="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-cyan-400">Gym management project</p>
-                <h1 class="text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl">A clearer view of <span class="text-cyan-400">member records.</span></h1>
-                <p class="mt-6 max-w-xl text-lg leading-8 text-slate-300">My Gym is an early-stage project exploring gym member registration and membership data. See what the prototype covers and where the work is still in progress.</p>
-                <div class="mt-8 flex flex-wrap items-center gap-4">
-                    <a class="animate-cta-pulse rounded-lg bg-purple-600 px-6 py-3 font-semibold text-white transition duration-200 hover:scale-105 hover:bg-purple-500 motion-reduce:animate-none" href="features.html">Explore the project</a>
-                    <a class="rounded-lg border border-slate-700 px-6 py-3 font-semibold text-slate-200 transition duration-200 hover:scale-105 hover:border-cyan-400 hover:text-white" href="membership.html">Member data</a>
-                </div>
-            </div>
-            <div class="relative min-h-80 overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 sm:min-h-[26rem]">
-                <img class="absolute inset-0 h-full w-full object-cover" src="assets/hero-section.jpg" alt="Athlete preparing for a deadlift in a gym" width="1200" height="800" fetchpriority="high" decoding="async">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent"></div>
-                <p class="absolute bottom-5 left-5 text-xs font-bold uppercase tracking-[0.2em] text-white sm:bottom-7 sm:left-7">Train with purpose</p>
-            </div>
-        </section>
+                <li><a href="index.html#membership">Membership</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <a href="signUp.html" class = "bg-purple-600 p-4 text-white rounded-xl">Join now</a>
+        </nav>
+    
+</section>
 
-        <section id="features" class="border-y border-slate-800 bg-slate-900/50">
-            <div class="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20">
-                <div class="max-w-2xl">
-                    <p class="text-xs font-bold uppercase tracking-[0.2em] text-cyan-400">Project overview</p>
-                    <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Built around everyday gym records.</h2>
-                    <p class="mt-4 leading-7 text-slate-300">The project explores how member details and related membership information could be organized and retrieved.</p>
-                </div>
-                <div class="mt-9 grid gap-4 md:grid-cols-3">
-                    <article class="rounded-xl border border-slate-800 bg-slate-950 p-6">
-                        <p class="text-sm font-semibold text-cyan-400">01</p>
-                        <h3 class="mt-4 text-xl font-semibold text-white">Member records</h3>
-                        <p class="mt-2 leading-7 text-slate-400">The API documentation describes user records with names, subscription type, and trainer status.</p>
-                    </article>
-                    <article class="rounded-xl border border-slate-800 bg-slate-950 p-6">
-                        <p class="text-sm font-semibold text-cyan-400">02</p>
-                        <h3 class="mt-4 text-xl font-semibold text-white">Registration demo</h3>
-                        <p class="mt-2 leading-7 text-slate-400">A front-end form demonstrates data entry. It does not create a live gym membership.</p>
-                    </article>
-                    <article class="rounded-xl border border-slate-800 bg-slate-950 p-6">
-                        <p class="text-sm font-semibold text-cyan-400">03</p>
-                        <h3 class="mt-4 text-xl font-semibold text-white">Equipment upkeep</h3>
-                        <p class="mt-2 leading-7 text-slate-400">Equipment maintenance is part of the project's stated direction; a complete tracking workflow is not yet available.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+<main>
+<section class = "mb-10 mx-auto h-100 text-center bg-[url(../images/heroSection.jpg)] bg-no-repeat bg-cover bg-center ">
+    <h1 class = "text-5xl font-bold mx-auto my-9">Welcome to the Spartan Gym</h1>
+    <h3 class = "text-3xl inline-block font-semibold mx-auto mb-5">Lift like a Spartan, flex like a champion!</h3>
+    <div>
+        <a href="signUp.html" class = "">Sign Up</a>
+    </div>
+</section>
+    
 
-        <section id="membership" class="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-14 sm:px-8 sm:py-20 md:flex-row md:items-end md:justify-between">
-            <div class="max-w-2xl">
-                <p class="text-xs font-bold uppercase tracking-[0.2em] text-cyan-400">Membership</p>
-                <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Ready to get started?</h2>
-                <p class="mt-4 leading-7 text-slate-300">Review the membership fields described by the project and see what the current prototype does.</p>
-            </div>
-            <a class="animate-cta-pulse inline-flex w-fit rounded-lg bg-purple-600 px-6 py-3 font-semibold text-white transition duration-200 hover:scale-105 hover:bg-purple-500 motion-reduce:animate-none" href="membership.html">Membership data</a>
-        </section>
-    </main>
+</main>
+    
 
-    <footer class="border-t border-slate-800">
-        <div class="mx-auto max-w-7xl px-5 py-6 text-sm text-slate-500 sm:px-8">My Gym &copy; 2026. All rights reserved.</div>
-    </footer>
+    <script src="script.js" type = "module"></script>
 </body>
 </html>

@@ -1,7 +1,5 @@
 ### My Gym System
 
-* This is a full stack CRUD project that simulates a classic gym automation system from signin and signup to admin controls. It is composed of a JS + TailwindCSS front-end and pure Node.js backend using the http library.
-
 
 ## 1.Background
 In the fitness world, gyms are where most exercising happens. Bodybuilders, athletes, crossfitters and even beginners have to sign in/ sign up at the reception before accessing the gym. It is then the responsibilty of the gym to keep records of everything that happens from signing in and out to maintaning equipment and keeping track of membership records.

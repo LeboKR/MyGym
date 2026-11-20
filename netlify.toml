@@ -1,6 +1,0 @@
-[build]
-  base = "frontEnd"
-  publish = "."
-
-[build.processing.html]
-  pretty_urls = true

@@ -1,4 +1,4 @@
-
+/*
 const firstNameEl = document.getElementById('firstName')
 const lastNameEl = document.getElementById('lastName')
 const userEmailEl = document.getElementById('email')
@@ -27,3 +27,4 @@ signUpBtnEl.addEventListener('click', event =>{
 })
 
 
+*/

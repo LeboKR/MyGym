@@ -3,40 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,0&icon_names=close" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="./output.css">
     <title>My Gym | Train with purpose</title>
 </head>
-<body class = "bg-slate-950 text-cyan-500">
-<section class="mb-8 flex border-b-2">
-        <a class="text-3xl font-semibold p-8" href="index.html">
-            My Gym
-        </a>
-        <nav class = "ms-auto  text-xl gap-10 flex items-center px-8">
-            <ul class = "flex space-x-8 ">
-                <li><a href="index.html">Home</a></li>
+<body class = "bg-[#EEF0F2] text-[#F58A07]">
 
-                <li><a href="index.html#membership">Membership</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-            <a href="signUp.html" class = "bg-purple-600 p-4 text-white rounded-xl">Join now</a>
-        </nav>
+<nav class = 'text-[#303A2B] font-semibold mb-4 hidden lg:flex w-full border-b  justify-between'>
+    <div class = "border-black p-10">
+        <a href = "index.html" class = "">
+        MyGym
+        </a>
+</div>
+    <ul class = "flex">
+        <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">About</a></li>
+        <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">Services</a></li>
+        <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">Contact</a></li>
+        <li class = "w-full basis-200 h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">Log In</a></li>
+    </ul>
     
-</section>
+</nav>
+
+<span onclick =openSideBar() class = "w-full lg:hidden cursor-pointer "><span class="material-symbols-outlined  text-white bg-[#303A2B]  hover:bg-white hover:text-black p-10 flex-auto">menu</span></span>
+
+<nav class = 'text-[#303A2B] font-semibold sideBar hidden sm:w-full'>
+    <ul class = "flex flex-col w-full md:w-4/10 text-center">
+        <li onclick =closeSideBar() class = "cursor-pointer"><span class="material-symbols-outlined">close</span></li>
+        <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a class = "bg-[#303A2B]" href = "#">About</a></li>
+        <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">Services</a></li>
+        <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">Contact</a></li>
+        <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">Log In</a></li>
+        
+        
+    </ul>
+    
+</nav>
 
 <main>
-<section class = "mb-10 mx-auto h-100 text-center bg-[url(../images/heroSection.jpg)] bg-no-repeat bg-cover bg-center ">
-    <h1 class = "text-5xl font-bold mx-auto my-9">Welcome to the Spartan Gym</h1>
-    <h3 class = "text-3xl inline-block font-semibold mx-auto mb-5">Lift like a Spartan, flex like a champion!</h3>
-    <div>
-        <a href="signUp.html" class = "">Sign Up</a>
+    <div class = "lg:bg-[url(../images/runner.png)]  h-screen  border-b p-4 md:p-8 text-[#303A2B]">
+        <div class = "font-semibold text-3xl md:text-5xl w-1/2 pl-4 pt-8 mt-8 h-100"><h2 class = "">Train like a <span class = "text-[#F58A07] font-bold">Spartan.</span><br>Move with Purpose.</h2>
+            <button class = "mt-10 md:mt-20 text-sm md:text-xl font-bold md:ml-20 w-fit border-0 rounded-2xl bg-[#F58A07] hover:bg-amber-500 cursor-pointer py-2 px-4 md:py-4 md:px-8">Join now</button></div>
+         <div class = " h-120 m-15"></div>
     </div>
-</section>
-    
-
 </main>
+
     
 
     <script src="script.js" type = "module"></script>
+    <script>
+        function openSideBar(){
+
+            console.log('clicked')
+            const sideBar = document.querySelector('.sideBar');
+            sideBar.classList.remove('hidden');
+        }
+
+        function closeSideBar(){
+
+            console.log('clicked')
+            const sideBar = document.querySelector('.sideBar');
+            sideBar.classList.add('hidden');
+        }
+
+        
+    </script>
 </body>
 </html>

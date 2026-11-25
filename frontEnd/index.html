@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./output.css">
     <title>My Gym | Train with purpose</title>
 </head>
-<body class = "bg-[#EEF0F2] text-[#F58A07]">
+<body class = "bg-[#EEF0F2] text-black font-bold">
 
-<nav class = 'text-[#303A2B] font-semibold mb-4 hidden lg:flex w-full border-b  justify-between'>
+<nav class = ' bg-[#EEF0F2]/50 mb-4 text-xl hidden fixed top-0 right-0 left-0 lg:flex w-full  justify-between'>
     <div class = "border-black p-10">
         <a href = "index.html" class = "">
         MyGym
         </a>
 </div>
-    <ul class = "flex">
+    <ul class = "flex ">
         <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">About</a></li>
         <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">Services</a></li>
         <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">Contact</a></li>
@@ -27,10 +27,10 @@
 
 <span onclick =openSideBar() class = "w-full lg:hidden cursor-pointer "><span class="material-symbols-outlined  text-white bg-[#303A2B]  hover:bg-white hover:text-black p-10 flex-auto">menu</span></span>
 
-<nav class = 'text-[#303A2B] font-semibold sideBar hidden sm:w-full'>
+<nav class = ' font-semibold sticky sideBar hidden sm:w-full'>
     <ul class = "flex flex-col w-full md:w-4/10 text-center">
         <li onclick =closeSideBar() class = "cursor-pointer"><span class="material-symbols-outlined">close</span></li>
-        <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a class = "bg-[#303A2B]" href = "#">About</a></li>
+        <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a class = "" href = "#">About</a></li>
         <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">Services</a></li>
         <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">Contact</a></li>
         <li class = "w-full h-full p-10 flex-auto hover:font-bold hover:bg-slate-300"><a href = "#">Log In</a></li>
@@ -41,10 +41,34 @@
 </nav>
 
 <main>
-    <div class = "lg:bg-[url(../images/runner.png)]  h-screen  border-b p-4 md:p-8 text-[#303A2B]">
-        <div class = "font-semibold text-3xl md:text-5xl w-1/2 pl-4 pt-8 mt-8 h-100"><h2 class = "">Train like a <span class = "text-[#F58A07] font-bold">Spartan.</span><br>Move with Purpose.</h2>
-            <button class = "mt-10 md:mt-20 text-sm md:text-xl font-bold md:ml-20 w-fit border-0 rounded-2xl bg-[#F58A07] hover:bg-amber-500 cursor-pointer py-2 px-4 md:py-4 md:px-8">Join now</button></div>
+    <div class = "lg:bg-[url(../images/runner.png)] h-[70vh] bg-no-repeat md:p-8 text-[#303A2B]">
+        <div class = "font-semibold text-3xl md:text-5xl w-1/2 pl-4 pt-20 mt-8 h-100"><h2 class = "">Train like a <span class = "text-[#F58A07] font-bold">Spartan.</span><br>Move with Purpose.</h2>
+            <div class = "mt-10 md:mt-20"><a class = " md:mt-20 text-sm md:text-xl font-bold md:ml-20 w-fit border-0 rounded-2xl bg-[#F58A07] hover:bg-amber-500 cursor-pointer py-2 px-4 md:py-4 md:px-8" href = './signUp.html'>Join now</a></div></div>
          <div class = " h-120 m-15"></div>
+    </div>
+    <div class = "bg-[url(../images/trainingBoxer.jpg)] h-screen bg-cover bg-no-repeat flex flex-col justify-end">
+        <div class = "flex h-1/2 justify-between">
+        <h1 class="font-bold pt-70 block w-2/4 h-fit justify-end p-15 text-5xl justify-bottom text-[#EEF0F2]">BECOME A CHAMPION <br> WITH MY GYM</h1>
+        <div class = "flex flex-col text-xl h-fit mr-20 mt-25 p-4  gap-10 text-[#EEF0F2]"><p class = 'w-fit text-right bg-black/30 p-4 rounded-1.25'>Hone your skills from begginer <br> to advanced with our experienced <br> trainers.</p><a href = "./signUp.html" class="bg-[#F58A07] w-fit hover:bg-amber-500 text-[#EEF0F2] font-bold py-4 px-8 rounded text-center">Book classes</a></div>
+        </div>
+    </div>
+    
+    <div class = "mt-15 flex gap-9">
+        <div class="flex flex-col w-1/2 m-9">
+            <h1 class = 'w-fit ml-30 text-5xl text-[#303A2B] p-8'>Check out our programs</h1>
+            <div class = 'rounded bg-[url(../images/runners.png)] flex flex-col justify-end bg-cover bg-no-repeat h-[40vh] w-full m-10'><p class = 'text-[#EEF0F2] p-9 font-bold text-4xl'>Running</p></div>
+        </div>
+        <div class="flex flex-col justify-end bg-[url(../images/calisthenics.png)] bg-cover bg-no-repeat w-120 h-129 rounded m-10 ml-30"><p class = 'text-[#EEF0F2] p-9 font-bold text-4xl'>Calisthenics</p></div>
+    </div>
+    <div class="flex flex-col justify-end bg-[url(../images/bodyBuilder.webp)] bg-cover bg-no-repeat w-87/100 ml-19 h-[70vh] rounded m-10 "><p class = 'text-[#EEF0F2] p-9 font-bold text-4xl'>Weight Lifting</p></div>
+
+    <div class = "bg-black h-screen mt-20">
+        <div>
+
+        </div>
+        <form>
+
+        </form>
     </div>
 </main>
 
@@ -53,8 +77,6 @@
     <script src="script.js" type = "module"></script>
     <script>
         function openSideBar(){
-
-            console.log('clicked')
             const sideBar = document.querySelector('.sideBar');
             sideBar.classList.remove('hidden');
         }

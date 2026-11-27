@@ -5,7 +5,7 @@ const userEmailEl = document.getElementById('email')
 const userPasswordEl = document.getElementById('password')
 const signUpBtnEl = document.getElementById('signUpBtn')
 
-
+if(signUpBtnEl){
 signUpBtnEl.addEventListener('click', event =>{
     event.preventDefault() 
     const firstName = firstNameEl.value
@@ -25,3 +25,17 @@ signUpBtnEl.addEventListener('click', event =>{
         console.log('Please enter all fields.')
     }
 })
+}
+
+function openSideBar(){
+            const sideBar = document.querySelector('.sideBar');
+            sideBar.classList.remove('hidden');
+        }
+function closeSideBar(){
+
+            console.log('clicked')
+            const sideBar = document.querySelector('.sideBar');
+            sideBar.classList.add('hidden');
+        }
+
+        

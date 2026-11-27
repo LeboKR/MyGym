@@ -41,7 +41,7 @@
 </nav>
 
 <main>
-    <div class = "lg:bg-[url(./images/runner.png)] h-screen bg-cover bg-no-repeat md:p-8 text-[#303A2B]">
+    <div class = "lg:bg-[url(images/runner.png)] h-screen bg-cover bg-no-repeat md:p-8 text-[#303A2B]">
         <div class = "font-semibold text-3xl md:text-5xl w-1/2 pl-4 pt-20 mt-8 h-100">
             <h2 class = "">Train like a <span class = "text-[#F58A07] font-bold">Spartan.</span><br>Move with Purpose.</h2>
             <p class = "text-xl mt-10 font-light">Come work out at MyGym to build a <br> strong body, mind and soul.<br> With strong support behind you you are bound <br>to achieve that dream physique.</p>
@@ -79,6 +79,7 @@
                 </div>
             <p class = "m-10 ml-8">Copyright © 2026 My Gym. All rights reserved.</p>
                 <!--TODO: ADD MAP TO FIND YOU -->
+                <!--Add AI chatbot for enquiries (Use OpenAI or similar)-->
         </div>
         <form class = "bg-[#EEF0F2]/70 flex flex-col rounded my-auto mx-16 p-8 h-[50vh] w-1/2">
             <h3 class = "text-4xl text-[#EEF0F2] mb-10">Let's get in touch!</h3>
@@ -93,20 +94,5 @@
     
 
     <script src="script.js" type = "module"></script>
-    <script>
-        function openSideBar(){
-            const sideBar = document.querySelector('.sideBar');
-            sideBar.classList.remove('hidden');
-        }
-
-        function closeSideBar(){
-
-            console.log('clicked')
-            const sideBar = document.querySelector('.sideBar');
-            sideBar.classList.add('hidden');
-        }
-
-        
-    </script>
 </body>
 </html>
